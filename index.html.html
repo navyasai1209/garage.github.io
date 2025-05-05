@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suramalas Garage - Your Trusted Auto Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1 class="garage-title">Suramalas Garage</h1>
+            <div class="tagline">Fast, Reliable, Affordable Repairs</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="appointments.html">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signin.html" class="signin-btn">Sign In</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Professional Auto Service</h1>
+            <p>Suramalas Garage is your trusted destination for expert car care, friendly service, and honest advice—keeping you safe and confident on every journey.</p>
+            <button class="cta-button" onclick="openAppointmentModal()">
+                <i class="fa-solid fa-calendar-check"></i> Book Your Service Now
+            </button>
+        </div>
+    </header>
+
+    <section class="highlights">
+        <h2>Essential Highlights</h2>
+        <div class="highlight-grid">
+            <div class="highlight-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Emergency</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-shuttle-van"></i>
+                <h3>Free Pickup & Drop for Repairs</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-user-check"></i>
+                <h3>Certified Technicians</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-tags"></i>
+                <h3>Affordable Packages & Transparent Pricing</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Online Booking</h3>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Live Service Tracking</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="review-name">Amit Sharma</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">Excellent service! My car feels brand new. Highly recommended.</div>
+            </div>
+            <div class="review-card">
+                <div class="review-name">Priya Verma</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">Friendly staff and quick turnaround. Will visit again!</div>
+            </div>
+            <div class="review-card">
+                <div class="review-name">Rahul Singh</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">Good value for money. The team explained everything clearly.</div>
+            </div>
+            <div class="review-card">
+                <div class="review-name">Sneha Patel</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">Best garage in town! Professional and trustworthy.</div>
+            </div>
+        </div>
+        <div class="google-reviews-widget">
+            <!-- Placeholder for Google Reviews Widget -->
+            <p><i class="fab fa-google"></i> See more 5-star reviews on Google!</p>
+        </div>
+    </section>
+
+    <section class="cert-inquiry-wrapper">
+        <div class="certifications">
+            <h2>Certifications & Affiliations</h2>
+            <div class="certification-grid">
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>ASE Certified</h3>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Local Business Award</h3>
+                </div>
+                <!-- Add more certifications/awards as needed -->
+            </div>
+        </div>
+        <div class="quick-inquiry">
+            <h2>Quick Inquiry</h2>
+            <form class="inquiry-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone" required>
+                <textarea placeholder="How can we help you?" required></textarea>
+                <button type="submit" class="cta-button">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019019145409!2d-122.4194151846816!3d37.7749297797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e0a6e2b%3A0x7d0b0b0b0b0b0b0b!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <a href="https://goo.gl/maps/yourbusiness" target="_blank" class="cta-button" style="margin-top:1rem;">Get Directions</a>
+        <a href="https://www.google.com/search?q=Suramalas+Garage" target="_blank" class="cta-button" style="margin-top:1rem; background:#4285F4; color:#fff;">View on Google</a>
+    </section>
+
+    <!-- Appointment Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAppointmentModal()">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <form id="appointmentForm" class="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="maintenance">General Maintenance</option>
+                        <option value="repair">Repairs</option>
+                        <option value="oil">Oil Change</option>
+                        <option value="inspection">Vehicle Inspection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Preferred Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select a location</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>General Maintenance</h3>
+                <p>Regular check-ups and maintenance to keep your vehicle running smoothly.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Repairs</h3>
+                <p>Expert repairs for all makes and models.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Oil Change</h3>
+                <p>Quick and efficient oil change services.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-search"></i>
+                <h3>Vehicle Inspection</h3>
+                <p>Comprehensive inspections for safety and performance.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-battery"></i>
+                <h3>Battery Replacement</h3>
+                <p>Fast battery testing and replacement for all vehicles.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-crash"></i>
+                <h3>Brake Service</h3>
+                <p>Reliable brake checks, repairs, and replacements.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-snowflake"></i>
+                <h3>AC Service</h3>
+                <p>Keep your car cool with our AC maintenance and repair.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-align-center"></i>
+                <h3>Wheel Alignment</h3>
+                <p>Precision wheel alignment for smooth, safe driving.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-water"></i>
+                <h3>Car Wash & Detailing</h3>
+                <p>Professional cleaning and detailing for a showroom shine.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Service</h3>
+                <p>Round the clock emergency services</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-certificate"></i>
+                <h3>Certified Mechanics</h3>
+                <p>Highly trained and certified professionals</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Best Prices</h3>
+                <p>Competitive pricing and transparent quotes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations">
+        <h2>Our Locations Across India</h2>
+        <div class="location-grid">
+            <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" onclick="openLocationModal('north')">
+                <div class="location-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>North India</h3>
+                    <div class="location-details">
+                        <p><strong>Delhi</strong><br>123 Connaught Place<br>Phone: (555) 111-2222</p>
+                        <p><strong>Chandigarh</strong><br>456 Sector 17<br>Phone: (555) 222-3333</p>
+                    </div>
+                    <div class="location-hover">
+                        <span>Click for more details</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" onclick="openLocationModal('south')">
+                <div class="location-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>South India</h3>
+                    <div class="location-details">
+                        <p><strong>Bangalore</strong><br>789 MG Road<br>Phone: (555) 333-4444</p>
+                        <p><strong>Chennai</strong><br>321 Marina Drive<br>Phone: (555) 444-5555</p>
+                    </div>
+                    <div class="location-hover">
+                        <span>Click for more details</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" onclick="openLocationModal('east')">
+                <div class="location-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>East India</h3>
+                    <div class="location-details">
+                        <p><strong>Kolkata</strong><br>567 Park Street<br>Phone: (555) 555-6666</p>
+                        <p><strong>Bhubaneswar</strong><br>890 Janpath<br>Phone: (555) 666-7777</p>
+                    </div>
+                    <div class="location-hover">
+                        <span>Click for more details</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1581093458791-9d15482442f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" onclick="openLocationModal('west')">
+                <div class="location-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>West India</h3>
+                    <div class="location-details">
+                        <p><strong>Mumbai</strong><br>234 Marine Drive<br>Phone: (555) 777-8888</p>
+                        <p><strong>Ahmedabad</strong><br>678 CG Road<br>Phone: (555) 888-9999</p>
+                    </div>
+                    <div class="location-hover">
+                        <span>Click for more details</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" onclick="openLocationModal('central')">
+                <div class="location-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Central India</h3>
+                    <div class="location-details">
+                        <p><strong>Bhopal</strong><br>345 MP Nagar<br>Phone: (555) 999-0000</p>
+                        <p><strong>Nagpur</strong><br>890 Wardha Road<br>Phone: (555) 000-1111</p>
+                    </div>
+                    <div class="location-hover">
+                        <span>Click for more details</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="location-card" style="background-image: url('https://images.unsplash.com/photo-1581093458791-9d15482442f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" onclick="openLocationModal('north-east')">
+                <div class="location-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>North-East India</h3>
+                    <div class="location-details">
+                        <p><strong>Guwahati</strong><br>456 GS Road<br>Phone: (555) 111-3333</p>
+                        <p><strong>Shillong</strong><br>789 Police Bazar<br>Phone: (555) 222-4444</p>
+                    </div>
+                    <div class="location-hover">
+                        <span>Click for more details</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Details Modal -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content location-modal">
+            <span class="close-modal" onclick="closeLocationModal()">&times;</span>
+            <div class="location-modal-content">
+                <div class="location-modal-header">
+                    <h2 id="modalLocationTitle">Location Details</h2>
+                </div>
+                <div class="location-modal-body">
+                    <div class="location-info">
+                        <div class="location-map">
+                            <iframe id="locationMap" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="location-details-grid">
+                            <div class="detail-section">
+                                <h3>Branch Information</h3>
+                                <div id="branchInfo"></div>
+                            </div>
+                            <div class="detail-section">
+                                <h3>Services Available</h3>
+                                <ul id="servicesList"></ul>
+                            </div>
+                            <div class="detail-section">
+                                <h3>Business Hours</h3>
+                                <div id="businessHours"></div>
+                            </div>
+                            <div class="detail-section">
+                                <h3>Contact Information</h3>
+                                <div id="contactInfo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@suramalagarage.com</p>
+                <p><i class="fas fa-location-dot"></i> Multiple locations across South India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Suramala Garage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
